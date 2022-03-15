@@ -1,5 +1,17 @@
 import React from 'react';
-import {Box, Center, Circle, Container, Flex, Grid, GridItem, HStack, Spacer, Square} from '@chakra-ui/react'
+import {
+  Box,
+  Center,
+  Circle,
+  Container,
+  Flex,
+  Grid,
+  GridItem,
+  HStack,
+  SimpleGrid,
+  Spacer,
+  Square
+} from '@chakra-ui/react'
 
 export const HomvePage = () => {
   return (
@@ -42,6 +54,14 @@ export const HomvePage = () => {
         <GridItem colSpan={2} h='10' bg='tomato'/>
         <GridItem colStart={4} colEnd={6} h='10' bg='papayawhip'/>
       </Grid>
+
+      <SimpleGrid columns={[2, null, 3]} spacing='40px'>
+        <Box bg='tomato' height='80px'></Box>
+        <Box bg='tomato' height='80px'></Box>
+        <Box bg='tomato' height='80px'></Box>
+        <Box bg='tomato' height='80px'></Box>
+        <Box bg='tomato' height='80px'></Box>
+      </SimpleGrid>
     </Box>
   );
 };
